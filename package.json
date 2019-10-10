@@ -1,6 +1,6 @@
 {
   "name": "threema-gateway-notify",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Send Notifications via Threema Gateway with Typescript",
   "main": "index.js",
   "scripts": {
