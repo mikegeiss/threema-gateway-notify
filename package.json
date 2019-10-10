@@ -1,0 +1,32 @@
+{
+  "name": "threema-gateway-notify",
+  "version": "0.0.2",
+  "description": "Send Notifications via Threema Gateway with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Geiss",
+  "keywords": [
+    "threema",
+    "notifications",
+    "typescript"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.12",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "homepage": "https://github.com/mikegeiss/threema-gateway-notify",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikegeiss/threema-gateway-notify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikegeiss/threema-gateway-notify/issues"
+  }
+}
