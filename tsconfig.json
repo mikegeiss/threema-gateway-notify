@@ -7,7 +7,8 @@
         "es6", "es2015", "es2016"
       ],
       "types": [
-        "node"
+        "node",
+        "jest"
       ],
       "target": "es6",
       "pretty": true,
