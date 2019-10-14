@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig } from 'axios';
+import assert from 'assert';
 import qs from 'querystring';
 
 export class ThreemaConnector {
@@ -9,6 +10,10 @@ export class ThreemaConnector {
    * @param {string} apiSecret - Threema Gateway Api Secret corresponds to the sender
    */
   constructor(private toIds: string[], private fromId: string, private apiSecret: string) {
+    assert.ok(this.toIds, "please pass parameter toIds:string[]");
+    assert.ok(this.toIds.length > 0, "parameter 'toIds:string[]' must not be empty");
+    assert.ok(this.fromId, 'please pass parameter fromId:string');
+    assert.ok(this.apiSecret, 'please pass parameter apiSecret:string');
   }
 
   async sendMessage(message: string) {
